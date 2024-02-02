@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstracja sortowania przez zliczanie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="settings">
+        <label for="num_var">ilość wartości</label>
+        <input type="number" name="ilość wartości" id="num_var" value="10">
+        <br>
+        <label for="max_var">Max wartości</label>
+        <input type="number" name="ilość wartości" id="max_var" value="9" min="0">
+        <br>
+        <label for="show_key">Pokaż klucze</label>
+        <input type="checkbox" name="show_key" id="show_key">
+        <br>
+        <label for="random_var">Bardziej losowe liczby</label>
+        <input type="checkbox" name="random_var" id="random_var">
+        <br>
+        <button id="sort_key">Posortuj według kluczy</button>
+        <br>
+        <button id="shuffle">Pomieszaj</button> <button id="regen">Wygeneruj</button>
+        <br>
+        <br>
+        <section id="options_store">
+            <button id="start_sort">START</button>
+        </section>
+    </section>
+    <section id="container">
+        <section id="demonstration">
+            <table id="var_store">
+                <tr>
+                    <td>x</td>
+                    <td>y</td>
+                </tr>
+            </table>
+            <section class="arrow_domain">
+                <img id="pointer_1"></img>
+            </section>
+            <section id="counter_store_container">
+                <table id="counter_store">
+                    <tr>
+                        <td>x</td>
+                        <td>y</td>
+                    </tr>
+                </table>
+                <span id="deduction"></span>
+            </section>
+            <section class="arrow_domain">
+                <img id="pointer_2"></img>
+            </section>
+            <table id="temp_var_store">
+                <tr>
+                    <td>x</td>
+                    <td>y</td>
+                </tr>
+            </table>
+            <section class="arrow_domain">
+                <img id="pointer_3"></img>
+            </section>
+        </section>
+        <img src="Obrazy/copy.png" id="long_arrow">
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
