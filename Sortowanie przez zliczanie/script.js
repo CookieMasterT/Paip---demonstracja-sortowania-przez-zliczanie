@@ -65,7 +65,7 @@ function regen_table()
     else
     {
         temp_counters = []
-        for (let i = 0; i < num_var.value; i++) {
+        for (let i = 0; i <= max_var.value; i++) {
             temp_counters.push(0);
         }
         for (let i = 0; i < num_var.value; i++) {
